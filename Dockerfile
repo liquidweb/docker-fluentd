@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install --yes make libcurl4-gnutls-dev && apt-get 
 
 RUN ["/usr/local/bin/gem", "install", "fluent-plugin-record-reformer", "--no-rdoc", "--no-ri"]
 RUN ["/usr/local/bin/gem", "install", "fluent-plugin-elasticsearch", "--no-rdoc", "--no-ri"]
+RUN ["/usr/local/bin/gem", "install", "fluent-plugin-docker-tag-resolver", "--no-rdoc", "--no-ri"]
 
 ADD fluent.conf /etc/fluent/
 
