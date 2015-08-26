@@ -10,6 +10,7 @@ RUN ["/usr/local/bin/gem", "install", "fluent-plugin-kubernetes", "--no-rdoc", "
 
 ADD fluent.conf /etc/fluent/
 ADD fluent-kubernetes.conf /etc/fluent/
+ADD run.sh /run.sh
 
-ENTRYPOINT ["/usr/local/bin/fluentd", "-c", "/etc/fluent/fluent.conf"]
+ENTRYPOINT ["/run"]
 
