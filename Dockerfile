@@ -12,5 +12,5 @@ ADD fluent.conf /etc/fluent/
 ADD fluent-kubernetes.conf /etc/fluent/
 ADD run.sh /run.sh
 
-ENTRYPOINT ["/run"]
+ENTRYPOINT ["/run.sh"]
 
